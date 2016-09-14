@@ -6,6 +6,7 @@ module.exports = {
     // Install GNU core utilities (those that come with OS X are outdated)
     // Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
     'coreutils',
+    'dark-mode',
     'dos2unix',
     // Install GNU `find`, `locate`, `updatedb`, and `xargs`, `g`-prefixed
     'findutils',
@@ -19,6 +20,9 @@ module.exports = {
     'gnu-sed --default-names',
     // better, more recent grep
     'homebrew/dupes/grep',
+    'homebrew/dupes/screen',
+    'homebrew/dupes/openssh',
+
     // https://github.com/jkbrzt/httpie
     'httpie',
     'imagemagick',
@@ -42,29 +46,41 @@ module.exports = {
     'wget --enable-iri'
   ],
   cask: [
+    '1password',
     //'adium',
     //'amazon-cloud-drive',
-    //'atom',
-    'box-sync',
+    'atom',
+    'caprine',
     //'comicbooklover',
     //'diffmerge',
-    //'dropbox',
+    'dropbox',
     //'evernote',
-    'gpgtools',
+    'google-chrome',
+    'hipchat',
     //'ireadfast',
     'iterm2',
-    //'macvim',
+    'macvim',
+    'qlcolorcode',
+    'qlstephen',
+    'qlmarkdown',
+    'quicklook-json',
+    'qlprettypatch',
+    'quicklook-csv',
+    'betterzipql',
+    'qlimagesize',
+    'webpquicklook',
     'sizeup',
+
     //'sketchup',
     'slack',
     'the-unarchiver',
     //'torbrowser',
     //'transmission',
-    //'vlc',
-    'xquartz'
+    'vlc'
   ],
   gem: [
-    'git-up'
+    'git-up',
+    'jekyll'
   ],
   npm: [
     'antic',
