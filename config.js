@@ -80,10 +80,12 @@ module.exports = {
   ],
   gem: [
     'git-up',
-    'jekyll'
+    'jekyll',
+    'sup'
   ],
   npm: [
     'antic',
+    'auto-install',
     'buzzphrase',
     'eslint',
     'instant-markdown-d',
