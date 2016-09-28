@@ -6,6 +6,7 @@ module.exports = {
     // Install GNU core utilities (those that come with OS X are outdated)
     // Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
     'coreutils',
+    'cowsay',
     'dark-mode',
     'dos2unix',
     // Install GNU `find`, `locate`, `updatedb`, and `xargs`, `g`-prefixed
@@ -19,7 +20,7 @@ module.exports = {
     // so we can do "sed -i 's/foo/bar/' file" instead of "sed -i '' 's/foo/bar/' file"
     'gnu-sed --default-names',
     // better, more recent grep
-    'homebrew/dupes/grep',
+    'homebrew/dupes/grep --default-names',
     'homebrew/dupes/screen',
     'homebrew/dupes/openssh',
 
@@ -35,7 +36,6 @@ module.exports = {
     'openconnect',
     'reattach-to-user-namespace',
     // better/more recent version of screen
-    'homebrew/dupes/screen',
     'tmux',
     'tree',
     'ttyrec',
@@ -47,17 +47,17 @@ module.exports = {
   ],
   cask: [
     '1password',
-    //'adium',
-    //'amazon-cloud-drive',
+    // 'adium',
+    // 'amazon-cloud-drive',
     'atom',
     'caprine',
-    //'comicbooklover',
-    //'diffmerge',
+    // 'comicbooklover',
+    // 'diffmerge',
     'dropbox',
-    //'evernote',
+    // 'evernote',
     'google-chrome',
     'hipchat',
-    //'ireadfast',
+    // 'ireadfast',
     'iterm2',
     'macvim',
     'qlcolorcode',
@@ -71,11 +71,11 @@ module.exports = {
     'webpquicklook',
     'sizeup',
 
-    //'sketchup',
+    // 'sketchup',
     'slack',
     'the-unarchiver',
-    //'torbrowser',
-    //'transmission',
+    // 'torbrowser',
+    'transmission',
     'vlc'
   ],
   gem: [
@@ -97,4 +97,4 @@ module.exports = {
     'trash',
     'vtop'
   ]
-};
+}

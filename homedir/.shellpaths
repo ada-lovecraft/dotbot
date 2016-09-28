@@ -14,3 +14,7 @@ export PATH=$(brew --prefix coreutils)/libexec/gnubin:$PATH
 
 # The next line enables shell command completion for gcloud.
 #source "/Users/$(whoami)/Downloads/google-cloud-sdk/completion.zsh.inc"
+
+# linaro crosstools
+export PATH=/usr/local/linaro/arm-linux-gnueabihf-raspbian/bin:$PATH
+export PATH=/usr/local/linaro/arm-linux-gnueabihf-raspbian:$PATH

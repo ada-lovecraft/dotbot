@@ -330,25 +330,25 @@ sudo pmset -a sms 0;ok
 # running "Enable the MacBook Air SuperDrive on any Mac"
 # sudo nvram boot-args="mbasd=1";ok
 
-# running "Remove Dropbox’s green checkmark icons in Finder"
-# file=/Applications/Dropbox.app/Contents/Resources/emblem-dropbox-uptodate.icns
-# [ -e "${file}" ] && mv -f "${file}" "${file}.bak";ok
+running "Remove Dropbox’s green checkmark icons in Finder"
+file=/Applications/Dropbox.app/Contents/Resources/emblem-dropbox-uptodate.icns
+[ -e "${file}" ] && mv -f "${file}" "${file}.bak";ok
 
-# running "Wipe all (default) app icons from the Dock"
+running "Wipe all (default) app icons from the Dock"
 # # This is only really useful when setting up a new Mac, or if you don’t use
 # # the Dock to launch apps.
-# defaults write com.apple.dock persistent-apps -array "";ok
+defaults write com.apple.dock persistent-apps -array "";ok
 
-#running "Enable the 2D Dock"
-#defaults write com.apple.dock no-glass -bool true;ok
+running "Enable the 2D Dock"
+defaults write com.apple.dock no-glass -bool true;ok
 
-#running "Disable the Launchpad gesture (pinch with thumb and three fingers)"
-#defaults write com.apple.dock showLaunchpadGestureEnabled -int 0;ok
+running "Disable the Launchpad gesture (pinch with thumb and three fingers)"
+defaults write com.apple.dock showLaunchpadGestureEnabled -int 0;ok
 
-#running "Add a spacer to the left side of the Dock (where the applications are)"
-#defaults write com.apple.dock persistent-apps -array-add '{tile-data={}; tile-type="spacer-tile";}';ok
-#running "Add a spacer to the right side of the Dock (where the Trash is)"
-#defaults write com.apple.dock persistent-others -array-add '{tile-data={}; tile-type="spacer-tile";}';ok
+running "Add a spacer to the left side of the Dock (where the applications are)"
+defaults write com.apple.dock persistent-apps -array-add '{tile-data={}; tile-type="spacer-tile";}';ok
+running "Add a spacer to the right side of the Dock (where the Trash is)"
+defaults write com.apple.dock persistent-others -array-add '{tile-data={}; tile-type="spacer-tile";}';ok
 
 
 ################################################
@@ -485,8 +485,8 @@ defaults write com.apple.universalaccess HIDScrollZoomModifierMask -int 262144;o
 running "Follow the keyboard focus while zoomed in"
 defaults write com.apple.universalaccess closeViewZoomFollowsFocus -bool true;ok
 
-# running "Disable press-and-hold for keys in favor of key repeat"
-# defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false;ok
+running "Disable press-and-hold for keys in favor of key repeat"
+defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false;ok
 
 running "Set a blazingly fast keyboard repeat rate"
 defaults write NSGlobalDomain KeyRepeat -int 0;
