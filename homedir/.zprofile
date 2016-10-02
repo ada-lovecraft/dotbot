@@ -21,3 +21,5 @@ setopt    incappendhistory  #Immediately append to the history file, not just wh
 function precmd () {
   z --add "$(pwd -P)"
 }
+export OPENNI2_INCLUDE=/usr/local/include/ni2
+export OPENNI2_REDIST=/usr/local/lib/ni2
